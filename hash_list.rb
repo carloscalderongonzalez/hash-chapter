@@ -14,3 +14,10 @@ list_of_people = [
   { :name => "Carl", :age => 9 },
 ]
 
+count=0
+while count<7
+  if list_of_people.at(count).fetch(:age)>=16
+  p list_of_people.at(count).fetch(:name)
+  end
+  count=count+1
+end
